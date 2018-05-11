@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  height: 100vh;
+  max-width: 1260px;
+  margin: auto;
+  padding: 10px 10px;
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    align-items: inherit;
+  }
+}
+.form-wrapper {
+  flex: 1 1 320px;
+  align-self: flex-start;
+
+  @media (min-width: 768px) {
+    align-self: center;
+  }
+
+  @media (min-width: 1024px) {
+    flex: 0 1 680px;
+    align-self: flex-start;
+  }
+}
+.form-header-wrapper {
+  display: flex;
+  background-color: #49599a;
+  padding: 15px;
+}
+.icon-wrapper {
+  flex: 0 1 64px;
+  margin-right: 10px;
+}
+.form-header {
+  flex: 1 1 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px;
+  text-align: right;
+  color: #fff;
+}
+.my-custom-input-field {
+  @media (min-width: 768px) {
+    flex: 0 1 48%;
+  }
+  @media (min-width: 1024px) {
+    flex: 1 1 100%;
+  }
+}
+.my-custom-checkbox {
+  padding: 15px 0;
+  @media (min-width: 768px) {
+    flex: 0 1 48%;
+  }
+}
+.my-custom-submit {
+  @media (min-width: 768px) {
+    flex: 0 1 48%;
+  }
+}
+.form-helpers {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+
